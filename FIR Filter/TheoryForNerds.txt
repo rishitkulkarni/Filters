@@ -1,1 +1,4 @@
 FIR stands for Finite Impulse Response
+
+An FIR filter is a moving formula that takes the current input and a few past inputs,
+multiplies each one by a weight, adds them up, and gives you a smoothed output.
