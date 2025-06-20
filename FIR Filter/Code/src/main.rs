@@ -32,7 +32,7 @@ fn main() {
     println!("Hello, world!");
     let coeffs = vec![0.1; 10];
     let mut filter = Filter::new (coeffs);
-    let mut rdr = Reader::from_path(r"C:\Users\ADMIN\Downloads\lollslls.csv").expect("Failed to open CSV file");
+    let mut rdr = Reader::from_path(r"path.csv").expect("Failed to open CSV file");
     let mut write = File::create("filteredPressure.csv").expect("Failed to create output file");
     writeln!(write,"time,filteredPressure").unwrap();
     for result in rdr.deserialize() {
